@@ -1,9 +1,7 @@
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-
-function App() {
-  return <div>Hello world!</div>;
-}
+import App from "./App";
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
