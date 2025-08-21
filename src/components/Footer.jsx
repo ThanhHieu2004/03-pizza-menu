@@ -1,9 +1,20 @@
 import React from "react";
+import Order from "./Order";
 
 function Footer() {
+  const openHour = 10;
+  const closeHour = 20;
+  const hour = new Date().getHours();
+  const isOpen = hour >= openHour && hour <= closeHour;
   return (
     <footer className="footer">
-      <p>We're happy to welcome you between 10:00 and 20:00.</p>
+      {isOpen ? (
+        <Order openHour={openHour} closeHour={closeHour} />
+      ) : (
+        <p>
+          We're closed! Come again between {openHour}:00 and {closeHour}:00.
+        </p>
+      )}
     </footer>
   );
 }

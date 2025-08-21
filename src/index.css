@@ -108,6 +108,7 @@ body {
 .pizza {
   display: flex;
   gap: 3.2rem;
+  padding: 1.2rem;
 }
 
 .pizza img {
@@ -152,6 +153,7 @@ body {
 /* *************** */
 
 .footer {
+  margin-top: 2rem;
   font-size: 1.4rem;
 }
 
